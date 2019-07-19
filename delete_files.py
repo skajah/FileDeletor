@@ -1,5 +1,5 @@
 import os
-
+import re
 
 
 def delete_files_r(root, regex_object, recursive=False, delete_empty_dirs=False):
