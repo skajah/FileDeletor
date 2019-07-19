@@ -3,11 +3,11 @@ import re
 
 
 def delete_files_r(root, regex_object, recursive=False, delete_empty_dirs=False):
-
+	if not os.path.isdir(root):
+		return
+	
 	for f in os.listdir(root):
-		print(f)
 		full_name = os.path.join(root,f)
-		print(full_name)
 		if os.path.isfile(full_name):
 			if regex_object.search(f):
 				os.remove(full_name)
