@@ -17,4 +17,7 @@ def delete_files_r(root, regex_object, recursive=False, delete_empty_dirs=False)
 
 	if delete_empty_dirs and not os.listdir(root):
 		os.rmdir(root)
-				
+
+if __name__ == '__main__':
+	print("Hi")
+
