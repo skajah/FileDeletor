@@ -1,6 +1,6 @@
 import os
 import re
-
+# random comment
 
 def delete_files_r(root, regex_object, recursive=False, delete_empty_dirs=False):
 	if not os.path.isdir(root):
